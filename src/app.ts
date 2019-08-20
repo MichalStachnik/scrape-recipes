@@ -7,7 +7,6 @@ app.get('/recipe/:url', (req: express.Request, res: express.Response, next: expr
   const url: string = req.params.url;
   switch (url) {
     case 'laurainthekitchen':
-      console.log('fetching');
       return fetchLaurainthekitchen(req, res, next);
     case 'maangi':
       return fetchMaangi(req, res, next);
